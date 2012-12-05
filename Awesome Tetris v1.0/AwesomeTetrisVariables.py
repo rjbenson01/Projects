@@ -33,8 +33,6 @@ for x in range(50):
     v = uniform(1, 1)
 
     r, g, b = hsv_to_rgb(h, s, v)
-
-    # Convert to 0-1 range for HTML output
     r, g, b = [x*255 for x in (r, g, b)]
     newColor = (r, g, b)
     colorArray.append(newColor)
