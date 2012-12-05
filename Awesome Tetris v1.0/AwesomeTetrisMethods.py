@@ -83,6 +83,7 @@ def play():
         
 #The "boardItemMovement" method handles shape movement logic on the board itself.
 def boardItemMovement(playArea, itemInPlay):
+    getLength = len(possibleShapes[itemInPlay['templateboardItem']])
     #This allows us to loop through any events currently being passed such as key presses etc.
     #With this we can get key presses :)!
     for event in pygame.event.get():
@@ -99,9 +100,9 @@ def boardItemMovement(playArea, itemInPlay):
                 itemInPlay['boardItemX'] = itemInPlay['boardItemX'] + 1
             #when up arrow is pressed flip shape, if it can be flipped
             elif (event.key == K_UP):
-                itemInPlay['shape'] = (itemInPlay['shape'] + 1) % len(possibleShapes[itemInPlay['templateboardItem']])
+                itemInPlay['shape'] = (itemInPlay['shape'] + 1) % getLength
                 if (MoveCheck(itemInPlay, playArea, 0, 0) == 0):
-                    itemInPlay['shape'] = (itemInPlay['shape'] - 1) % len(possibleShapes[itemInPlay['templateboardItem']])
+                    itemInPlay['shape'] = (itemInPlay['shape'] - 1) % getLength
             #when the down arrow is pressed we move the shape down the board adding onto the Y coordinate
             elif (event.key == K_DOWN):
                 keyCheck = 'Down'
