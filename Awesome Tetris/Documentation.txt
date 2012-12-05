@@ -1,0 +1,40 @@
+#This file is part of AwesomeTetris.
+#AwesomeTetris is free software: you can redistribute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+
+#AwesomeTetris is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR PARTICULAR PURPOSE. See the
+#GNU General Public License for more details.
+
+#You should have received a copy of the GNU General Public License
+#along with AwesomeTetris. If not, see <http://www.gnu.org/licenses/>.
+#By: James R. Benson
+
+AwesomeTetris is just a simple Tetris game written in Python.
+
+AwesomeTetrisMain.py is the file that contains the "main()" of the project.
+AwesomeTetrisMethods.py is the file that contains the "core" of the project, and contains all the major methods.
+AwesomeTetrisTemplates.py is the file that contains all of the shape "templates" stored in a dynamicArray using key-Value pairs.
+AwesomeTetrisVariables.py contains the most commonly used global variables.
+(Note: Due to my inexperience with Python I had trouble getting curScore to be used correctly so I had to use it specifically as a "global" in some places)
+
+
+All of the images included are ones I found online for free, and then recropped them to serve the game's purposes. 
+You may reuse any of them :). The original images that they are based on are not my work, but again were free to download and use/edit.
+
+
+
+Things I would have liked to add had I more time to complete the project:
+-A timer to show overall time spent on a current game.
+-Best Score being kept between games, and program exits/starts.
+-Music
+-Simple Animations to break up the "static" nature of the game.
+-Changing backgrounds as level increases.
+
+
+Attention: Please note that AwesomeTetris requires Python 3.3, and Pygame for Python 3.3 to run! 
+Python 3.3: <www.python.org/download/>
+Pygame for Python 3.3: <https://bitbucket.org/pygame/pygame/downloads>
